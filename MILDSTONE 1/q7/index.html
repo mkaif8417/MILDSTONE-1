@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <!-- <link rel="stylesheet" href="s.css"> -->
+</head>
+<body>
+    <h1>Shopping Cart</h1>
+    <p>Enter the items you want to add to your cart:</p>
+
+    <form id="cartForm">
+        <label for="itemInput">Enter an item:</label>
+        <input type="text" id="itemInput" required>
+        <button type="button" onclick="addItem()">Add Item</button>
+    </form>
+
+    <h2>Your Cart (Unique Items):</h2>
+    <ul id="cartItems"></ul>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Total Calculator</title>
+</head>
+<body>
+    <h1>Cart Total Calculator</h1>
+    <form id="cartForm">
+        <label for="cartInput">Enter Cart Items (JSON Format):</label>
+        <textarea id="cartInput" rows="5" cols="50" placeholder='e.g., [{"unitPrice": 100, "quantity": 2}, {"unitPrice": 200, "quantity": 1}]'></textarea>
+        <br><br>
+        <button type="button" onclick="calculateTotal()">Calculate Total</button>
+    </form>
+
+    <h2>Result:</h2>
+    <p id="result"></p>
+<script src="sc.js"></script>
+</body>
+</html>

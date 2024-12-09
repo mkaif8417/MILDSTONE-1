@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fix Cart Quantities</title>
+</head>
+<body>
+    <h1>Fix Cart Quantities</h1>
+    <label for="cartInput">Enter cart quantities (comma separated):</label>
+    <input type="text" id="cartInput" placeholder="e.g., 1, 2, 3, 4">
+    <button onclick="fixCartQuantities()">Fix Quantities</button>
+
+    <h2>Updated Quantities:</h2>
+    <p id="result"></p>
+
+    <script>
+        function fixCartQuantities() {
+            // Get the input value and split it into an array
+            const input = document.getElementById("cartInput").value;
+            const cartQuantities = input.split(',').map(num => parseInt(num.trim())); // Convert to integers
+
+            // Double each quantity in the array
+            for (let i = 0; i < cartQuantities.length; i++) {
+                cartQuantities[i] *= 2;
+            }
+
+            // Display the updated quantities
+            document.getElementById("result").textContent = `Updated Quantities: ${cartQuantities.join(', ')}`;
+        }
+    </script>
+</body>
+</html>

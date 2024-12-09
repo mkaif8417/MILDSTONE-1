@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Move Image with Arrow Keys</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        #image {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            transition: left 0.1s, top 0.1s; /* Smooth transition for movement */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Image to move -->
+    <img id="image" src="download.jpeg" alt="Image" />
+
+   <script src="sc.js"></script>
+
+</body>
+</html>

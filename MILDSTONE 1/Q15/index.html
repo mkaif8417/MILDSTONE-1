@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discount Percentage Calculator</title>
+</head>
+<body>
+    <h1>Discount Percentage Calculator</h1>
+    <form id="discountForm">
+        <label for="originalPrice">Enter Original Price (Rs):</label>
+        <input type="number" id="originalPrice" step="0.01" min="0" placeholder="e.g., 1000">
+        <br><br>
+        
+        <label for="discountedPrice">Enter Discounted Price (Rs):</label>
+        <input type="number" id="discountedPrice" step="0.01" min="0" placeholder="e.g., 800">
+        <br><br>
+        
+        <button type="button" onclick="calculateDiscount()">Calculate Discount</button>
+    </form>
+
+    <h2>Result:</h2>
+    <p id="result"></p>
+<script src="script.js"></script>
+</body>
+</html>

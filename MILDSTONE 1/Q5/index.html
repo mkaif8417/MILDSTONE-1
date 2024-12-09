@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capitalize First Letter</title>
+</head>
+<body>
+    <h1>Enter Your Name</h1>
+    <form id="nameForm">
+        <label for="nameInput">Your Name:</label>
+        <input type="text" id="nameInput" required>
+        <button type="button" onclick="processName()">Submit</button>
+    </form>
+
+    <h2>Modified Name: <span id="modifiedName"></span></h2>
+
+    <script>
+        function processName() {
+            //take input from user
+            const name = document.getElementById("nameInput").value;
+
+            
+            const modifiedName = name[0] === name[0].toLowerCase()
+                ? name[0].toUpperCase() + name.slice(1)
+                : name;
+
+        
+            document.getElementById("modifiedName").textContent = modifiedName;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Mixer</title>
+    <style>
+        .box{
+            border: 2px solid chocolate;
+            border-radius: 5px;
+            height: 80vh;
+            width: 80vw;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+
+        <h1>Color Mixer</h1>
+        <p>Type two colors (e.g., red, blue, yellow) to see the resulting color.</p>
+        
+        <form id="colorForm">
+            <label for="color1">Enter first color:</label>
+            <input type="text" id="color1" required>
+            <br><br>
+            
+            <label for="color2">Enter second color:</label>
+            <input type="text" id="color2" required>
+            <br><br>
+            
+            <button type="button" onclick="mixColors()">Mix Colors</button>
+        </form>
+        
+        <h2 id="result"></h2>
+    </div>
+
+   <script src="logic.js"></script>
+</body>
+</html>
